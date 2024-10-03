@@ -17,7 +17,7 @@ import (
 const (
 	DefaultHost           string = "0.0.0.0"
 	DefaultPort           int    = 7379
-	DefaultHost           string = "0.0.0.0"
+	DefaultAddress        string = "unix:///tmp/dice.sock"
 	DefaultConfigName     string = "dice.toml"
 	DefaultConfigFilePath string = "./"
 
@@ -32,6 +32,8 @@ const (
 var (
 	Host = DefaultHost
 	Port = DefaultPort
+
+	Address = DefaultAddress
 
 	EnableMultiThreading = false
 	EnableHTTP           = true
